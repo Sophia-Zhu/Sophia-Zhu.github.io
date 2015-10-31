@@ -3,6 +3,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
         <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
@@ -18,13 +19,14 @@
         <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>        
     <script src="scripts.js"></script>
+    <script src="controllers.js"></script>
         
     </head>
 
     <body class="cream" ng-app="portApp">
-        <div class="jumbotron orange">
-          <div class="container center" id="header">
-            <h1><span class="redtext"> {  </span> <span class="creamtext"> Sophia Zhu </span> <span class="redtext"> } </span></h1>
+        <div class="jumbotron orange" id="header">
+          <div class="container center">
+            <h1><span class="redtext font"> {  </span> <span class="creamtext font"> Sophia Zhu </span> <span class="redtext font"> } </span></h1>
               <h2 class="redtext">programming and art portfolio</h2>
           </div>
         </div>
@@ -45,15 +47,50 @@
               <div class="col-md-4">
                  <button type="button" class="btn btn-custom">{ SOFTWARE }</button>
               </div>
-              <div class="col-md-4">
-                  <button type="button" class="btn btn-custom">{ ARTWORK }</button>
+            <div class="col-md-4">
+                  <button type="button" class="btn btn-custom"  data-toggle="modal" data-target="#contactModal">{ CONTACT }</button>
               </div>
               <div class="col-md-4">
-                  <button type="button" class="btn btn-custom">{ CONTACT }</button>
+                  <button type="button" class="btn btn-custom">{ ARTWORK }</button>
               </div>
 
         </div>
     </div>
+        
+    <!--Modal-->    
+    <div class="modal fade" id="contactModal" role="dialog">
+        <div class="modal-dialog">
+      <div class="modal-content cream">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title redtext">About / Contact Information</h3>
+        </div>
+        <div class="modal-body myFont">
+            <p>Sophia Zhu is currently an undergraduate at Carnegie Mellon University majoring in computer science and minoring in art. She is very passionate about creativity and making functional things that work, whether it be a physical object or a piece of abstract code.</p>
+        </div>
+        <div class="modal-footer myFont redText left">
+            <div>
+                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                <a href="assets/extras/resume.pdf" target="_blank" download>
+                    : Download resume
+                </a>
+            </div>
+            <div>
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> : srzhu@andrew.cmu.edu
+            </div> 
+            <div>
+                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> : (408)-834-2519
+            </div> 
+            <div>
+                <i class="fa fa-github"></i> 
+                <a href="https://github.com/Sophia-Zhu" target="_blank">
+                    : Sophia-Zhu
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
         
     </body>
 </html>

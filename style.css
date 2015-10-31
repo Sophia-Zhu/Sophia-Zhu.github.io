@@ -1,3 +1,10 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 .cream {
     background-color: #FFF8EB !important;
 } 
@@ -22,9 +29,24 @@
     color: #ff8d00 !important;
 }
 
-h1 {
-    color: #CC0000;
+.myFont {
     font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: #e0301e !important;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif !important;
 }
 
 #front_buttons {
@@ -37,7 +59,11 @@ h1 {
 }
 
 .center {
-    text-align: center;
+    text-align: center !important;
+}
+
+.left {
+    text-align: left !important;
 }
 
 .btn-custom {
@@ -46,6 +72,10 @@ h1 {
     font-size: 40px !important;
     font-family: 'Oswald', sans-serif !important;
 }
-.btn-custom:hover, .btn-custom:focus, .btn-custom:active{
+.btn-custom:hover{
     background:  #ff8d00 !important;
+}
+
+.btn-custom:focus{
+    outline: none !important;
 }
