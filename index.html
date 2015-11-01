@@ -1,7 +1,6 @@
-<html>
+<html ng-app="portApp">
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -23,74 +22,18 @@
         
     </head>
 
-    <body class="cream" ng-app="portApp">
+    <body class="cream" ng-controller="mainCtrl">
+        
         <div class="jumbotron orange" id="header">
           <div class="container center">
             <h1><span class="redtext font"> {  </span> <span class="creamtext font"> Sophia Zhu </span> <span class="redtext font"> } </span></h1>
               <h2 class="redtext">programming and art portfolio</h2>
           </div>
         </div>
-        
-    <div class= "container center">
-        <div class="row">
-              <div class="col-md-6">
-                 <img src="assets/extras/flam_cover.png" class="img-circle">  
-              </div>
-              <div class="col-md-6">
-                  <img src="assets/extras/flam_back.png" class="img-circle">  
-              </div>
-        </div>  
-    </div>     
-        
-    <div class="container center">
-        <div class="row" id="front_buttons">
-              <div class="col-md-4">
-                 <button type="button" class="btn btn-custom">{ SOFTWARE }</button>
-              </div>
-            <div class="col-md-4">
-                  <button type="button" class="btn btn-custom"  data-toggle="modal" data-target="#contactModal">{ CONTACT }</button>
-              </div>
-              <div class="col-md-4">
-                  <button type="button" class="btn btn-custom">{ ARTWORK }</button>
-              </div>
-
+ 
+        <div ng-view>
+   
         </div>
-    </div>
-        
-    <!--Modal-->    
-    <div class="modal fade" id="contactModal" role="dialog">
-        <div class="modal-dialog">
-      <div class="modal-content cream">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h3 class="modal-title redtext">About / Contact Information</h3>
-        </div>
-        <div class="modal-body myFont">
-            <p>Sophia Zhu is currently an undergraduate at Carnegie Mellon University majoring in computer science and minoring in art. She is very passionate about creativity and making functional things that work, whether it be a physical object or a piece of abstract code.</p>
-        </div>
-        <div class="modal-footer myFont redText left">
-            <div>
-                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-                <a href="assets/extras/resume.pdf" target="_blank" download>
-                    : Download resume
-                </a>
-            </div>
-            <div>
-                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> : srzhu@andrew.cmu.edu
-            </div> 
-            <div>
-                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> : (408)-834-2519
-            </div> 
-            <div>
-                <i class="fa fa-github"></i> 
-                <a href="https://github.com/Sophia-Zhu" target="_blank">
-                    : Sophia-Zhu
-                </a>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
         
     </body>
 </html>
