@@ -91,10 +91,10 @@ app.controller('artCtrl', function($scope, $location) {
             description: "A figurine in several parts was modeled from scratch in Blender and exported as seperate STLs. These parts were then printed on a Dimension 3D printer before being coated in acrylic gesso, painted with acrylic and enamel paints, and sprayed with clear gloss coating. Blender and 3D modeling was learned for the first time for this project.",
             date: 'October 2015',
             thumbnail: 'assets/art/projects/3d_flamenco/thumbnail.png',
-            images: ["assets/art/projects/3d_flamenco/apart.png",
-                     "assets/art/projects/3d_flamenco/together.png",
-                     "assets/art/projects/3d_flamenco/unpainted_photo.jpg",
-                     "assets/art/projects/3d_flamenco/painted_photo.jpg"]
+            images: ["assets/art/projects/3d_flamenco/Apart.png",
+                     "assets/art/projects/3d_flamenco/Together.png",
+                     "assets/art/projects/3d_flamenco/Unpainted_Photo.jpg",
+                     "assets/art/projects/3d_flamenco/Painted_Photo.jpg"]
          },
          {
              name: "Unfinished Pages Zine",
