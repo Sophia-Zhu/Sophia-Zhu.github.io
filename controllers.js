@@ -123,13 +123,13 @@ app.controller('artCtrl', function($scope, $location) {
             date: 'October 2015',
             thumbnail: 'assets/art/projects/memorial_zine/thumbnail.png',
             images: ["assets/art/projects/memorial_zine/copies.jpg",
-                     "assets/art/projects/memorial_zine/1.jpg",
-                     "assets/art/projects/memorial_zine/2.jpg",
-                     "assets/art/projects/memorial_zine/3.jpg",
-                     "assets/art/projects/memorial_zine/4.jpg",
-                     "assets/art/projects/memorial_zine/5.jpg",
-                     "assets/art/projects/memorial_zine/6.jpg",
-                     "assets/art/projects/memorial_zine/7.jpg"]
+                     "assets/art/projects/memorial_zine/1.JPG",
+                     "assets/art/projects/memorial_zine/2.JPG",
+                     "assets/art/projects/memorial_zine/3.JPG",
+                     "assets/art/projects/memorial_zine/4.JPG",
+                     "assets/art/projects/memorial_zine/5.JPG",
+                     "assets/art/projects/memorial_zine/6.JPG",
+                     "assets/art/projects/memorial_zine/7.JPG"]
          },
          {
             name: "Hero's Journey (fanzine)",
