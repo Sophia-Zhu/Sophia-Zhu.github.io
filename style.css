@@ -37,15 +37,7 @@ a {
     color: #e0301e !important;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif !important;
-}
-
-h2 {
-    font-family: 'Oswald', sans-serif !important;
-}
-
-h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif !important;
 }
 
@@ -66,6 +58,10 @@ h3 {
     text-align: left !important;
 }
 
+.right {
+    text-align: right !important;
+}
+
 .btn-custom {
     background: #e0301e !important;
     color: #FFF8EB !important;
@@ -79,3 +75,64 @@ h3 {
 .btn-custom:focus{
     outline: none !important;
 }
+
+.start-fade {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.start-fade.in {
+    opacity: 1;
+}
+
+.slide-left {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.slide-left.in {
+    opacity: 1;
+}
+
+.slide-right {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.slide-right.in {
+    opacity: 1;
+}
+
+.thumb{
+    transition: all 200ms ease-in-out;
+}
+.thumb:hover{
+    filter: brightness(50%);
+}
+
+.prog-title{
+    transition: all 200ms ease-in-out;
+}
+.prog-title:hover{
+    margin-left:40px;
+    color:  #9d2215 !important;
+}
+
+.art-title{
+    transition: all 200ms ease-in-out;
+}
+.art-title:hover{
+    margin-left:40px;
+    color:  #9d2215 !important;
+}
+
+.arrow{
+    transition: all 100ms ease-in-out;
+    vertical-align: text-bottom;
+    font-size: 50px;
+}
+.arrow:hover{
+    color:  #9d2215 !important;
+}
+
+#programmingpage {
+    transition: all 1s ease-in-out;
+}
+

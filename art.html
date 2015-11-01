@@ -1,15 +1,15 @@
-<div id="programmingpage" class="slide-left" ng-init="ngLoaded = true" ng-class="{'in': ngLoaded}">
+<div id="artpage" class="slide-right" ng-init="ngLoaded = true" ng-class="{'in': ngLoaded}">
    <div class="container">
-       <div class="page-header redtext prog-title" ng-click="back()">
+       <div class="page-header redtext art-title" ng-click="back()">
            <h2>
-             Programming Projects >>
+             << Art Portfolio
            </h2>  
        </div>
        <div class="row center">
            <div ng-repeat="piece in pieces" class="col-md-3">
-           <img class="thumb" src="{{piece.thumbnail}}" width="200" data-toggle="modal" data-target="#programmingModal{{$index}}">
+           <img class="thumb" src="{{piece.thumbnail}}" width="200" data-toggle="modal" data-target="#artModal{{$index}}">
                
-            <div class="modal fade" id="programmingModal{{$index}}" role="dialog">
+            <div class="modal fade" id="artModal{{$index}}" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content modal-lg cream">
                         <div class="modal-header">
