@@ -6,8 +6,8 @@
            </h2>  
        </div>
        <div class="row center">
-           <div ng-repeat="piece in pieces" class="col-md-3">
-           <img class="thumb" src="{{piece.thumbnail}}" width="200" data-toggle="modal" data-target="#artModal{{$index}}">
+           <div ng-repeat="piece in pieces" class="col-md-3 portfolio-entry">
+           <img class="thumb" src="{{piece.thumbnail}}" width="200" data-toggle="modal" data-target="#artModal{{$index}}"  ng-click="reset()">
                
             <div class="modal fade" id="artModal{{$index}}" role="dialog">
                 <div class="modal-dialog">
@@ -23,6 +23,12 @@
                                 </div>
                                 <div class="col-md-10">
                                     <img ng-src="{{piece.images[index]}}" width="500">
+                                    <div ng-show="{{piece.has_video}}">
+                                         <video id="artVideo" width="512" controls>
+                                            <source src="{{piece.video}}" type="video/mp4">
+                                             Your browser does not support the video tag.
+                                        </video> 
+                                    </div>
                                 </div>
                                 <div class="col-md-1 arrow" ng-click="picForward(piece)">
                                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
@@ -39,10 +45,13 @@
                         </div>
                     </div>
                 </div>
-                
            </div>
            </div>
        </div>
     </div>
-    
+    <!-- script for disabling the video when the modal is exited-->
+    <script>
+        $('body').on('hidden.bs.modal', '.modal', function () {
+            $('video').trigger('pause');
+        });</script>
 </div>

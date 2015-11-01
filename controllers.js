@@ -40,7 +40,7 @@ app.controller('programmingCtrl', function($scope, $location) {
     $scope.pieces = 
         [{
             name: "Run Fish Run",
-            description: 'A randomly generated infinite runner featuring an unfortunate fish who has unexpectedly grown legs. Created for TechComm(2015) using the Unity Game Engine.',
+            description: 'A randomly generated infinite runner featuring an unfortunate fish who has unexpectedly grown legs. Created for TechComm 2015 using the Unity Game Engine. Collaborators include Takumi Fujimoto and Roger Liu.',
             date: 'May 2015', 
             thumbnail: 'assets/programming/run_fish/thumbnail.png',
             images: ["assets/programming/run_fish/hairy.gif",
@@ -49,7 +49,7 @@ app.controller('programmingCtrl', function($scope, $location) {
          }, 
          {
             name: "After Our Time",
-            description: '2D top-down game featuring a real-time grappling hook system. Created for the 2015 Global Game Jam using the Unity Game Engine.',
+            description: '2D top-down game featuring a real-time grappling hook system. Play as a character and explore ruins and caverns, fighting monsters along the way. Created for the 2015 Global Game Jam using the Unity Game Engine. Collaborators include Taehoon Lee, Stephen Chen, Roger Liu and Jamei Wang.',
             date: 'January 2015',
             thumbnail: 'assets/programming/after_our_time/thumbnail.png',
             images: ["assets/programming/after_our_time/chase.gif", 
@@ -58,7 +58,7 @@ app.controller('programmingCtrl', function($scope, $location) {
          },
          {
             name: "TrafficKing",
-            description: '2D top-down game that models a realistic traffic system, random source/endpoint generation and shortest-path finding. The player controls the traffic light system and attempts to crash as many cars into each other as possible over a set period of time. Created over the course of a semester with a group of students for Game Creation Society.',
+            description: '2D top-down game that models a realistic traffic system, random source/endpoint generation and shortest-path finding. The player controls the traffic light system and attempts to crash as many cars into each other as possible over a set period of time. Created over the course of a semester with a group of students for Game Creation Society. Collaborators include Taehoon Lee, Roger Liu, Yijing Chen and Huayuan Hua.',
             date: 'Fall 2014',
             thumbnail: 'assets/programming/trafficking/thumbnail.png',
             images: ["assets/programming/trafficking/minimap.gif",
@@ -77,6 +77,10 @@ app.controller('programmingCtrl', function($scope, $location) {
         $scope.index = ($scope.index === size) ? 0 : $scope.index + 1;
     };
     
+    $scope.reset = function() {
+        $scope.index = 0;
+    };
+    
     $scope.back = function() {
         $location.path('');
     };
@@ -87,8 +91,25 @@ app.controller('artCtrl', function($scope, $location) {
     $scope.index = 0;
     $scope.pieces = 
         [{
+            name: "Recent Drawings",
+            description: "A selection of drawings, paintings and other 2D media created throughout the last year or so.",
+            date: '2014-Present',
+            thumbnail: 'assets/art/recent_drawings/thumbnail.png',
+            images: ["assets/art/recent_drawings/10.jpg",
+                     "assets/art/recent_drawings/9.jpg",
+                     "assets/art/recent_drawings/6.jpg",
+                     "assets/art/recent_drawings/7.jpg",
+                     "assets/art/recent_drawings/5.jpg",
+                     "assets/art/recent_drawings/1.jpg",
+                     "assets/art/recent_drawings/gravity falls.png",
+                     "assets/art/recent_drawings/hobbit.png",
+                     "assets/art/recent_drawings/noahcomic1.png",
+                     "assets/art/recent_drawings/noahcomic2.png",
+                     "assets/art/recent_drawings/noahcomic3.gif"]
+         },
+         {
             name: "3D-Printed Figurine",
-            description: "A figurine in several parts was modeled from scratch in Blender and exported as seperate STLs. These parts were then printed on a Dimension 3D printer before being coated in acrylic gesso, painted with acrylic and enamel paints, and sprayed with clear gloss coating. Blender and 3D modeling was learned for the first time for this project.",
+            description: "A figurine was modeled from scratch in Blender and exported as seperate STLs. These parts were then printed on a Dimension 3D printer before being coated in acrylic gesso, painted with acrylic and enamel paints, and sprayed with clear gloss coating. Blender and 3D modeling was learned for the first time for this project.",
             date: 'October 2015',
             thumbnail: 'assets/art/projects/3d_flamenco/thumbnail.png',
             images: ["assets/art/projects/3d_flamenco/Apart.png",
@@ -98,11 +119,70 @@ app.controller('artCtrl', function($scope, $location) {
          },
          {
              name: "Unfinished Pages Zine",
-            description: "A short, ten-page zine designed to memorialize the many unfinished pages found in sketchbooks. Each zine entry documents the sketchbook's qualities and the date it was last used. 40 copies of this were printed out, hand-assembled into booklets and randomly distributed on campus. Slightly humorous in nature, this piece was designed to evoke a sense of comradery between artists, almost all of who can relate to this.",
+            description: "A short, twenty-page zine designed to memorialize the many unfinished pages found in sketchbooks. Each entry documents the sketchbook's qualities and the date it was last used. 40 copies of this were printed, hand-assembled into booklets and randomly distributed on campus. Slightly humorous in nature, this piece was both designed to evoke a sense of comradery between artists, almost all of who can relate to leaving sketchbooks unfinished, and to reveal a traditionally private part of myself to the public in an anonymous way.",
             date: 'October 2015',
             thumbnail: 'assets/art/projects/memorial_zine/thumbnail.png',
-            images: ["assets/art/projects/memorial_zine/copies.jpg"
-                ]
+            images: ["assets/art/projects/memorial_zine/copies.jpg",
+                     "assets/art/projects/memorial_zine/1.jpg",
+                     "assets/art/projects/memorial_zine/2.jpg",
+                     "assets/art/projects/memorial_zine/3.jpg",
+                     "assets/art/projects/memorial_zine/4.jpg",
+                     "assets/art/projects/memorial_zine/5.jpg",
+                     "assets/art/projects/memorial_zine/6.jpg",
+                     "assets/art/projects/memorial_zine/7.jpg"]
+         },
+         {
+            name: "Hero's Journey (fanzine)",
+            description: "A 32-page fanzine put together in the space of two weeks to celebrate the one-year anniversary of obscure superhero anime Samurai Flamenco's ending. Copies were professionally printed using an online service and then sold through Storenvy.",
+            date: 'March 2015',
+            thumbnail: 'assets/art/projects/flamenco_zine/thumbnail.png',
+            images: ["assets/art/projects/flamenco_zine/cover.jpg",
+                     "assets/art/projects/flamenco_zine/2.jpg",
+                     "assets/art/projects/flamenco_zine/3.jpg",
+                     "assets/art/projects/flamenco_zine/4.jpg"]
+         },
+         {
+            name: "There Is Something Standing Right Behind You",
+            description: "A five-part narrative comic about unknowingly being followed by some mysterious entity until it is too late. Designed to evoke a sense of claustrophobia and doom, this piece was inspired from that occasional paranoid, illogical feeling that there is something behind you.",
+            date: 'October 2014',
+            thumbnail: 'assets/art/projects/shadow_comic/thumbnail.png',
+            images: ["assets/art/projects/shadow_comic/1.jpg",
+                     "assets/art/projects/shadow_comic/2.jpg",
+                     "assets/art/projects/shadow_comic/3.jpg",
+                     "assets/art/projects/shadow_comic/4.jpg",
+                     "assets/art/projects/shadow_comic/5.jpg"]
+         },
+         {
+            name: "High School Portfolio",
+            description: "A selection of old artwork created in high school. Many of these were used to apply for colleges, and several have won Scholastic gold or silver medals.",
+            date: '2011-2013',
+            thumbnail: 'assets/art/hs_portfolio/thumbnail.png',
+            images: ['assets/art/hs_portfolio/bike.png',
+                     'assets/art/hs_portfolio/bichromatic.jpg',
+                     'assets/art/hs_portfolio/barnacles.jpg',
+                     'assets/art/hs_portfolio/anorexia.jpg',
+                     'assets/art/hs_portfolio/theory train.jpg',
+                     'assets/art/hs_portfolio/stomp.jpg',
+                     'assets/art/hs_portfolio/still life.jpg',
+                     'assets/art/hs_portfolio/lotf.jpg',
+                     'assets/art/hs_portfolio/img_1281.jpg',
+                     'assets/art/hs_portfolio/headless oil.jpg',
+                     'assets/art/hs_portfolio/goinghome.jpg',
+                     'assets/art/hs_portfolio/flyinghands.jpg',
+                     'assets/art/hs_portfolio/dress.jpg',
+                     'assets/art/hs_portfolio/depressionjelly.jpg',
+                     'assets/art/hs_portfolio/cherub.jpg',
+                     'assets/art/hs_portfolio/cagedbird.png',
+                     'assets/art/hs_portfolio/bust of woman.jpg']
+         },
+         {
+            name: "Dust Bowl Dance",
+            description: "A 2D animated comic video about the Grapes of Wrath set to Mumford and Son's Dust Bowl Dance. Made for my 11th grade English course.",
+            date: 'May 2012',
+            thumbnail: 'assets/art/projects/grapes_of_wrath/thumbnail.png',
+            images: [],
+            video: 'assets/art/projects/grapes_of_wrath/dust_bowl.mp4',
+            has_video: true
          }];
     
     $scope.picBack = function(piece) {
@@ -113,6 +193,10 @@ app.controller('artCtrl', function($scope, $location) {
     $scope.picForward = function(piece) {
         var size = piece.images.length;
         $scope.index = ($scope.index === size) ? 0 : $scope.index + 1;
+    };
+    
+    $scope.reset = function() {
+        $scope.index = 0;
     };
     
     $scope.back = function() {

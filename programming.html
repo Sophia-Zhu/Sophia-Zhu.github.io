@@ -6,8 +6,8 @@
            </h2>  
        </div>
        <div class="row center">
-           <div ng-repeat="piece in pieces" class="col-md-3">
-           <img class="thumb" src="{{piece.thumbnail}}" width="200" data-toggle="modal" data-target="#programmingModal{{$index}}">
+           <div ng-repeat="piece in pieces" class="col-md-3 portfolio-entry">
+           <img class="thumb" src="{{piece.thumbnail}}" width="200" data-toggle="modal" data-target="#programmingModal{{$index}} " ng-click="reset()">
                
             <div class="modal fade" id="programmingModal{{$index}}" role="dialog">
                 <div class="modal-dialog">
