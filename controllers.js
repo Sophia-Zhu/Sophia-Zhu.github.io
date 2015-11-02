@@ -39,6 +39,16 @@ app.controller('programmingCtrl', function($scope, $location) {
     $scope.index = 0;
     $scope.pieces = 
         [{
+            name: "Scrabble",
+            description: 'An independently designed and tested implementation of a multi-player scrabble game. Programmed in Java; GUI was made using Java Swing.',
+            date: 'October 2015', 
+            thumbnail: 'assets/programming/scrabble/thumbnail.png',
+            images: ["assets/programming/scrabble/player1.gif",
+                     "assets/programming/scrabble/playerswitch.gif",
+                    "assets/programming/scrabble/player2.gif"]
+            
+         },
+         {
             name: "Run Fish Run",
             description: 'A randomly generated infinite runner featuring an unfortunate fish who has unexpectedly grown legs. Created for TechComm 2015 using the Unity Game Engine. Collaborators include Takumi Fujimoto and Roger Liu.',
             date: 'May 2015', 
@@ -74,7 +84,7 @@ app.controller('programmingCtrl', function($scope, $location) {
     
     $scope.picForward = function(piece) {
         var size = piece.images.length;
-        $scope.index = ($scope.index === size) ? 0 : $scope.index + 1;
+        $scope.index = ($scope.index === size - 1) ? 0 : $scope.index + 1;
     };
     
     $scope.reset = function() {
@@ -192,7 +202,7 @@ app.controller('artCtrl', function($scope, $location) {
     
     $scope.picForward = function(piece) {
         var size = piece.images.length;
-        $scope.index = ($scope.index === size) ? 0 : $scope.index + 1;
+        $scope.index = ($scope.index === size - 1) ? 0 : $scope.index + 1;
     };
     
     $scope.reset = function() {
