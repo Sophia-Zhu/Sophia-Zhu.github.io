@@ -39,6 +39,23 @@ app.controller('programmingCtrl', function($scope, $location) {
     $scope.index = 0;
     $scope.pieces = 
         [{
+            name: "Anomalous",
+            description: 'A short VR game for mobile devices created independently that utilizes Google Cardboard. Designed to try and create an immersive experience and a sense of dread/anxiety. Created using Unity, and will be released on the Apple App Store in the near future.',
+            date: 'December 2015', 
+            thumbnail: 'assets/programming/anomalous/thumbnail.png',
+            images: [],
+            video: 'assets/programming/anomalous/anomalousvid.mp4',
+            has_video: true
+         },
+        {
+            name: "Timestep Framework",
+            description: 'A data analysis framework for social media websites that can iterate through data over various points in time. Sample plugins using APIs for Twitter, Tumblr and GitHub were also written. Programmed in Java; GUI was made using Java Swing. Collaborators include Israel Madueme and Madeleine Robson.',
+            date: 'November 2015', 
+            thumbnail: 'assets/programming/times_step_framework/thumbnail.png',
+            images: ['assets/programming/times_step_framework/count.png',
+                    'assets/programming/times_step_framework/follower.png']
+         },
+        {
             name: "Scrabble",
             description: 'An independently designed and tested implementation of a multi-player scrabble game. Programmed in Java; GUI was made using Java Swing.',
             date: 'October 2015', 
