@@ -43,9 +43,8 @@ app.controller('programmingCtrl', function($scope, $location) {
             description: 'A short VR game for mobile devices created independently that utilizes Google Cardboard. Designed to try and create an immersive experience and a sense of dread/anxiety. Created using Unity, and will be released on the Apple App Store in the near future.',
             date: 'December 2015', 
             thumbnail: 'assets/programming/anomalous/thumbnail.png',
-            images: [],
-            video: 'assets/programming/anomalous/anomalousvid.mp4',
-            has_video: true
+            images: ['assets/programming/anomalous/one.png',
+                    'assets/programming/anomalous/two.png']
          },
         {
             name: "Timestep Framework",
