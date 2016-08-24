@@ -39,6 +39,13 @@ app.controller('programmingCtrl', function($scope, $location) {
     $scope.index = 0;
     $scope.pieces = 
         [{
+            name: "Soul Mates",
+            description: 'Created for the 2016 Global Game Jam using the Unity Game Engine alongside a large team of people. Winner of the Audience Choice Award. Based off of the ancient Chinese tradition of "ghost marriages" between two deceased, this game aims to find the compatability between two players via a series of cooperative minigames.', 
+            thumbnail: 'assets/programming/soulmates/thumbnail.png',
+            images: ['assets/programming/soulmates/one.png',
+                    'assets/programming/soulmates/two.png']
+         },
+         {
             name: "Anomalous",
             description: 'A short VR game for mobile devices created independently that utilizes Google Cardboard. Designed to try and create an immersive experience and a sense of dread/anxiety. Created using Unity, and will be released on the Apple App Store in the near future.',
             date: 'December 2015', 
@@ -46,7 +53,7 @@ app.controller('programmingCtrl', function($scope, $location) {
             images: ['assets/programming/anomalous/one.png',
                     'assets/programming/anomalous/two.png']
          },
-        {
+         {
             name: "Timestep Framework",
             description: 'A data analysis framework for social media websites that can iterate through data over various points in time. Sample plugins using APIs for Twitter, Tumblr and GitHub were also written. Programmed in Java; GUI was made using Java Swing. Collaborators include Israel Madueme and Madeleine Robson.',
             date: 'November 2015', 
@@ -54,7 +61,7 @@ app.controller('programmingCtrl', function($scope, $location) {
             images: ['assets/programming/times_step_framework/count.png',
                     'assets/programming/times_step_framework/follower.png']
          },
-        {
+         {
             name: "Scrabble",
             description: 'An independently designed and tested implementation of a multi-player scrabble game. Programmed in Java; GUI was made using Java Swing.',
             date: 'October 2015', 
@@ -113,7 +120,7 @@ app.controller('programmingCtrl', function($scope, $location) {
 });
 
         
-app.controller('artCtrl', function($scope, $location) {
+app.controller('artCtrl', function($scope, $location, $sce) {
     $scope.index = 0;
     $scope.pieces = 
         [{
@@ -132,6 +139,24 @@ app.controller('artCtrl', function($scope, $location) {
                      "assets/art/recent_drawings/noahcomic1.png",
                      "assets/art/recent_drawings/noahcomic2.png",
                      "assets/art/recent_drawings/noahcomic3.gif"]
+         },
+         {
+            name: "There Are No Trees Here",
+            description: "A 3D animated short about a boy who really likes plants. Collaborators include Eric Yu, Ben Scott, Roger Liu, Audrey Banks.",
+            date: 'May 2016',
+            thumbnail: 'assets/art/projects/no_trees_here/thumbnail.png',
+            images: [],
+            video:  $sce.trustAsResourceUrl('https://player.vimeo.com/video/165859819'),
+            has_embedded: true
+         },
+         {
+            name: "Out of Step",
+            description: "An animated short about a girl who builds a machine that allows her to step out for a moment.",
+            date: 'May 2016',
+            thumbnail: 'assets/art/projects/out_of_step/thumbnail.png',
+            images: [],
+            video:  $sce.trustAsResourceUrl('https://player.vimeo.com/video/165409375'),
+            has_embedded: true
          },
          {
             name: "3D-Printed Figurine",

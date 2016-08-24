@@ -23,11 +23,14 @@
                                 </div>
                                 <div class="col-md-10">
                                     <img ng-src="{{piece.images[index]}}" width="500">
-                                    <div ng-show="{{piece.has_video}}">
+                                    <div ng-if="piece.has_video">
                                          <video id="artVideo" width="512" controls>
                                             <source src="{{piece.video}}" type="video/mp4">
                                              Your browser does not support the video tag.
                                         </video> 
+                                    </div>
+                                    <div ng-if="piece.has_embedded">
+                                         <iframe id="yourIframeId" ng-src="{{piece.video}}" width="512" height="288" frameborder="0" webkitallowfullscreen                                              mozallowfullscreen allowfullscreen></iframe>
                                     </div>
                                 </div>
                                 <div class="col-md-1 arrow" ng-click="picForward(piece)">
@@ -51,7 +54,11 @@
     </div>
     <!-- script for disabling the video when the modal is exited-->
     <script>
-        $('body').on('hidden.bs.modal', '.modal', function () {
+        $('body').on('hidden.bs.modal', '.modal', function (modal) {
             $('video').trigger('pause');
+            var $frame = $("#" + modal.currentTarget.id).find("iframe:first");
+            var vidsrc = $frame.attr('src');
+            $frame.attr('src',''); 
+            $frame.attr('src', vidsrc);
         });</script>
 </div>
