@@ -1,0 +1,10 @@
+body {
+    background-color: #373a44;
+}
+.center {
+ position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -480px;
+}
